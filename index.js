@@ -9,30 +9,9 @@ let gameOver = false;
 let moves = 9;
 let board = Array(9).fill(null);
 console.log(board);
-let name = prompt('Enter your name');
+//let name = prompt('Enter your name');
 
-$("#p1Indicator").text(name);
-
-// $(".box").on("click", function () {
-//     if (!($(this).hasClass("box x") || $(this).hasClass("box o")) && !gameOver) {
-//         //$("span").removeClass("active");
-//         if (!turn) {
-//             // $("#p2Indicator").addClass("active");
-//             $(this).addClass("x");
-//             board[Number($(this).attr('id'))]= 0;
-//         } else {
-//             // $("#p1Indicator").addClass("active");
-//             $(this).addClass("o");
-//             board[Number($(this).attr('id'))] = 1;
-//         }
-//         turn = !turn;
-//         moves-=2;
-//     }
-//     if (moves == 0)
-//         gameOver = draw();
-//     gameOver = isGameOver();
-//     console.log(board);
-// });
+//$("#p1Indicator").text(name);
 
 $(".box").on("click", function () {
     if (!($(this).hasClass("box x") || $(this).hasClass("box o")) && !gameOver) {
@@ -43,7 +22,7 @@ $(".box").on("click", function () {
     }
     if (moves == 0)
         gameOver = draw();
-    gameOver = isGameOver();
+    gameOver = isGameOver(board);
     console.log(board);
 });
 
