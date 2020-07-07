@@ -20,14 +20,12 @@ $(".box").on("click", function () {
         if(!gameOver){
           setTimeout(() => {
               board = markOp(board);
+              gameOver = isGameOver(board);
           }, 300);  
         }
-            
-        console.log(evaluate(board));
         moves -= 2;
         if (moves <= 0)
             gameOver = draw();
-        gameOver = isGameOver(board);
     }
 });
 
