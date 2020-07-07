@@ -20,7 +20,7 @@ $(".box").on("click", function () {
         if(!gameOver){
           setTimeout(() => {
               board = markOp(board);
-          }, 500);  
+          }, 300);  
         }
             
         console.log(evaluate(board));
