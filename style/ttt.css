@@ -57,6 +57,7 @@ button:hover {
     padding-bottom: 20%;
     float: left;
     margin: 3px;
+    transition: background-color 2s;
 }
 
 
