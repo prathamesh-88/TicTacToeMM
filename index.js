@@ -3,6 +3,8 @@
 import {reset} from './function/reset.js';
 import {isGameOver,draw} from './function/gameOver.js';
 import { markOp } from './function/markOp.js';
+import {evaluate } from './function/evaluate.js'
+import {equal3} from './function/gameOver.js';
 
 let turn = 0;
 let gameOver = false;
@@ -23,6 +25,7 @@ $(".box").on("click", function () {
               gameOver = isGameOver(board);
           }, 300);  
         }
+
         moves -= 2;
         if (moves <= 0)
             gameOver = draw();

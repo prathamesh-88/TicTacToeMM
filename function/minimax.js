@@ -8,8 +8,8 @@ const areMovesLeft = (board) => {
     return false;
 }
 export const minimax = (board, depth,isMax) =>{
-    let score = evaluate(board);
-    if(score == 10)
+    let score = evaluate(board,depth);
+    if (score == 10 / depth)
         return score;
 
     if(score == -10)

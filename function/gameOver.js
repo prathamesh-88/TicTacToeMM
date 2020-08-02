@@ -6,7 +6,6 @@ function gameWin(query, winArr) {
     winArr.forEach(e => {
         $("#" + e).addClass("win");
     });
-    $("span").removeClass("active");
 }
 
 export function draw() {
