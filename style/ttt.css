@@ -131,5 +131,10 @@ span {
         margin: 0 10%;
         width: 20%;
     }
+    button:hover {
+            background: none;
+            border: none;
+            color: black;
+    }
 
 }
