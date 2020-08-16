@@ -15,14 +15,16 @@ let board = Array(9).fill(null);
 
 
 $(".box").on("click", function () {
-    if (!($(this).hasClass("box x") || $(this).hasClass("box o")) && !gameOver) {
+    if (!turn & (!($(this).hasClass("box x") || $(this).hasClass("box o")) && !gameOver)) {
         $(this).addClass("x");
         board[Number($(this).attr('id'))] = 0;
+        turn = 1;
         gameOver = isGameOver(board);
         if(!gameOver){
           setTimeout(() => {
               board = markOp(board);
               gameOver = isGameOver(board);
+              turn = 0;
           }, 300);  
         }
 
