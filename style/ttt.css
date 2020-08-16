@@ -1,11 +1,16 @@
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
 h1 {
     color: white;
     text-transform: uppercase;
     font-family: "arial", "sans-serif";
-    font-size: 75px;
+    font-size: 5em;
     text-align: center;
     background-color: orange;
-    margin: 0;
+    margin: 0 auto;
     padding: 15 px 0;
 }
 
@@ -20,6 +25,7 @@ p {
     color: whitesmoke;
     background-color: orange;
     text-align: center;
+ 
     word-spacing: 3px;
     height: 30px;
     padding-top: 10px;
@@ -27,6 +33,7 @@ p {
     margin-top: 0;
     font-weight: bold;
     display: none;
+    width: 100%;
 }
 
 button {
@@ -47,14 +54,14 @@ button:hover {
 #main {
     height: 500px;
     width: 500px;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 .box {
     width: 30%;
-    height: 10%;
+    height: 0;
     background-color: white;
-    padding-bottom: 20%;
+    padding-bottom: 30%;
     float: left;
     margin: 3px;
 }
@@ -65,6 +72,7 @@ button:hover {
     text-align: center;
     background-color: white;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .x {
@@ -91,4 +99,37 @@ span {
 .active {
     background-color: orange;
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    #strip{
+        height: 30px;
+        margin-bottom: 10%;
+    }
+    #main{
+        width: 80%;
+    }
+    
+    h1{
+        padding-top:10px;
+        height: 15%;
+        font-size: 3em;
+    }
+
+    span{
+        padding: 7px;
+    }
+
+    p{
+        position: absolute;
+        bottom: 0;
+    }
+    .active{
+        padding: 7px 10px;
+    }
+    button{
+        margin: 0 10%;
+        width: 20%;
+    }
+
 }

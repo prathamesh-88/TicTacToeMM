@@ -36,3 +36,7 @@ $(".box").on("click", function () {
 $("#reset").on("click", ()=>{
     [gameOver, moves, turn,board] = reset();
 });
+
+$('#main').css({
+    'height': ` ${$('#main').width()} px`
+});
